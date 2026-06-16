@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery — Vishal Kalakaar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ===== NAV ===== -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">vishal<span class="dot">.</span>dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="dev-portfolio.html">Dev Work</a></li>
+      <li><a href="art-gallery.html" class="current">Art Gallery</a></li>
+      <li><a href="journey.html">Journey</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Let's talk</a>
+    <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Pencil &amp; graphite</div>
+    <h1>Portraits, sketches, and the occasional timelapse</h1>
+    <p class="lead">
+      A growing collection of pencil work — portrait studies, celebrity sketches,
+      family commissions and custom orders. Tap any piece for a closer look, or
+      filter by category below.
+    </p>
+  </div>
+</section>
+
+<!-- ===== MASONRY GALLERY ===== -->
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="gallery-filter reveal" id="galleryFilter">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="portrait">Portrait Sketches</button>
+      <button data-filter="celebrity">Celebrity Sketches</button>
+      <button data-filter="family">Family Portraits</button>
+      <button data-filter="custom">Custom Orders</button>
+      <button data-filter="timelapse">Timelapse Videos</button>
+    </div>
+
+    <div class="masonry" id="masonryGrid">
+
+      <!-- Portrait sketches -->
+      <div class="masonry-item h-tall" data-cat="portrait">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Portrait Sketch · A4</div>
+          <h4>Likeness Study — Side Light</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="portrait">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Portrait Sketch</div>
+          <h4>Quick Study — Eyes &amp; Brow</h4>
+        </div>
+      </div>
+
+      <!-- Celebrity sketch -->
+      <div class="masonry-item" data-cat="celebrity">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Celebrity Sketch · A3</div>
+          <h4>Actor Portrait Study</h4>
+        </div>
+      </div>
+
+      <!-- Family portrait -->
+      <div class="masonry-item h-wide" data-cat="family">
+        <div class="mthumb">
+          <svg viewBox="0 0 300 180"><ellipse cx="90" cy="80" rx="42" ry="52"/><ellipse cx="190" cy="80" rx="42" ry="52"/><ellipse cx="140" cy="120" rx="28" ry="34"/><path d="M40 165 C 80 130 180 130 220 165"/></svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Family Portrait · A3</div>
+          <h4>Three-Person Family Sketch</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="custom">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Custom Order</div>
+          <h4>Gift Portrait — Anniversary</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="portrait">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Portrait Sketch · A4</div>
+          <h4>Expression Study — Smile</h4>
+        </div>
+      </div>
+
+      <!-- Timelapse -->
+      <div class="masonry-item h-tall" data-cat="timelapse">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="play-badge">▶</div>
+        <div class="moverlay">
+          <div class="mtag">Timelapse Video</div>
+          <h4>Portrait Process — Start to Finish</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="celebrity">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Celebrity Sketch</div>
+          <h4>Musician Portrait Study</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="custom">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Custom Order</div>
+          <h4>Pet-Owner Portrait Pair</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item h-wide" data-cat="family">
+        <div class="mthumb">
+          <svg viewBox="0 0 300 180"><ellipse cx="80" cy="85" rx="40" ry="50"/><ellipse cx="160" cy="80" rx="44" ry="55"/><ellipse cx="230" cy="100" rx="32" ry="40"/><path d="M30 165 C 90 130 230 130 280 165"/></svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Family Portrait · A3</div>
+          <h4>Grandparents &amp; Grandchild</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="portrait">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="moverlay">
+          <div class="mtag">Portrait Sketch · A4</div>
+          <h4>Profile Study</h4>
+        </div>
+      </div>
+
+      <div class="masonry-item" data-cat="timelapse">
+        <div class="mthumb">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="play-badge">▶</div>
+        <div class="moverlay">
+          <div class="mtag">Timelapse Video</div>
+          <h4>Shading Layers — Time-lapse</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE / AFTER ===== -->
+<section class="alt-bg-rev">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow">Before &amp; after</div>
+        <h2>From reference photo to finished sketch</h2>
+      </div>
+      <p>Drag the slider to compare the original reference photo with the finished graphite portrait.</p>
+    </div>
+
+    <div class="ba-grid reveal-stagger">
+      <div class="ba-card">
+        <div class="ba-compare" data-ba>
+          <div class="ba-after">
+            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="ba-before">
+            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="1.1"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="1.1"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="1.1"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1.1"/>
+            </svg>
+          </div>
+          <span class="ba-badge b-before">Reference photo</span>
+          <span class="ba-badge b-after">Pencil portrait</span>
+          <div class="ba-handle" style="left:50%"></div>
+        </div>
+        <h4>Commissioned Portrait — Couple</h4>
+        <p>A3 graphite portrait completed over roughly 12 hours, focused on matching the original lighting.</p>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-compare" data-ba>
+          <div class="ba-after">
+            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <path d="M66 72 C 64 38 136 38 134 72 C 138 102 130 134 118 150 C 110 160 90 160 82 150 C 70 134 62 102 66 72 Z"/>
+              <path d="M66 64 C 64 36 84 16 100 16 C 118 16 138 34 134 64 C 128 50 112 44 100 46 C 86 44 72 50 66 64 Z"/>
+              <path d="M64 56 C 60 76 60 96 66 110" stroke-width="0.8"/>
+              <path d="M136 56 C 140 76 140 96 134 110" stroke-width="0.8"/>
+              <path d="M76 94 C 82 90 90 90 94 94" stroke-width="0.9"/>
+              <path d="M106 94 C 110 90 118 90 124 94" stroke-width="0.9"/>
+              <path d="M98 98 C 100 106 100 112 96 116" stroke-width="0.7"/>
+              <path d="M86 128 C 94 134 106 134 114 128" stroke-width="0.9"/>
+              <path d="M38 200 C 54 166 146 166 162 200" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="ba-before">
+            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <path d="M66 72 C 64 38 136 38 134 72 C 138 102 130 134 118 150 C 110 160 90 160 82 150 C 70 134 62 102 66 72 Z"/>
+              <path d="M66 64 C 64 36 84 16 100 16 C 118 16 138 34 134 64 C 128 50 112 44 100 46 C 86 44 72 50 66 64 Z"/>
+              <path d="M76 94 C 82 90 90 90 94 94" stroke-width="1.1"/>
+              <path d="M106 94 C 110 90 118 90 124 94" stroke-width="1.1"/>
+              <path d="M86 128 C 94 134 106 134 114 128" stroke-width="1.1"/>
+              <path d="M38 200 C 54 166 146 166 162 200" stroke-width="1.1"/>
+            </svg>
+          </div>
+          <span class="ba-badge b-before">Reference photo</span>
+          <span class="ba-badge b-after">Pencil portrait</span>
+          <div class="ba-handle" style="left:50%"></div>
+        </div>
+        <h4>Gift Portrait — Birthday Surprise</h4>
+        <p>A4 study with heavier shading to match a moody, low-light reference photo.</p>
+      </div>
+    </div>
+
+    <p class="ba-hint">Drag the ⇔ handle left and right to compare</p>
+  </div>
+</section>
+
+<!-- ===== INSTAGRAM ===== -->
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="ig-handle-row reveal">
+      <div>
+        <div class="eyebrow">Follow the sketchbook</div>
+        <h2 style="margin:0;">Latest on Instagram</h2>
+      </div>
+      <div class="handle">
+        <a href="https://www.instagram.com/vishal_kalakaar" target="_blank" rel="noopener">@vishal_kalakaar</a>
+      </div>
+    </div>
+
+    <div class="ig-grid reveal-stagger">
+      <div class="ig-tile"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg><div class="ig-overlay">♡</div></div>
+      <div class="ig-tile"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg><div class="ig-overlay">♡</div></div>
+      <div class="ig-tile"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg><div class="ig-overlay">♡</div></div>
+      <div class="ig-tile"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg><div class="ig-overlay">♡</div></div>
+      <div class="ig-tile"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(1,1)" style="transform:scaleX(1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg><div class="ig-overlay">♡</div></div>
+      <div class="ig-tile"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" transform="scale(-1,1)" style="transform:scaleX(-1); transform-origin:center;">
+              <path d="M70 70 C 68 35 132 35 130 70 C 134 100 128 130 116 148 C 108 158 92 158 84 148 C 72 130 66 100 70 70 Z"/>
+              <path d="M70 66 C 60 40 75 18 100 18 C 125 18 140 40 130 66"/>
+              <path d="M68 60 C 64 78 64 96 70 108" stroke-width="0.8"/>
+              <path d="M132 60 C 136 78 136 96 130 108" stroke-width="0.8"/>
+              <path d="M78 92 C 84 88 92 88 96 92" stroke-width="0.9"/>
+              <path d="M104 92 C 108 88 116 88 122 92" stroke-width="0.9"/>
+              <path d="M96 96 C 98 104 98 110 95 114" stroke-width="0.7"/>
+              <path d="M88 126 C 95 132 105 132 112 126" stroke-width="0.9"/>
+              <path d="M40 200 C 55 165 145 165 160 200" stroke-width="1"/>
+            </svg><div class="ig-overlay">♡</div></div>
+    </div>
+
+    <div class="ig-cta reveal">
+      <a href="https://www.instagram.com/vishal_kalakaar" target="_blank" rel="noopener">
+        View full profile on Instagram →
+      </a>
+      <span>New portrait studies and timelapses posted regularly</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> Vishal — <span class="fmark">built &amp; sketched by hand</span></p>
+    <div class="fsocial">
+      <a href="resume.html">Resume</a>
+      <a href="https://www.instagram.com/vishal_kalakaar" target="_blank" rel="noopener">Instagram</a>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Gallery filter
+  const filterBtns = document.querySelectorAll('#galleryFilter button');
+  const items = document.querySelectorAll('#masonryGrid .masonry-item');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      items.forEach(item => {
+        const show = f === 'all' || item.dataset.cat === f;
+        item.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  // Masonry item click -> lightbox
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const tag = item.querySelector('.mtag').textContent;
+      const title = item.querySelector('h4').textContent;
+      const svg = item.querySelector('.mthumb svg').outerHTML;
+      openLightbox(`
+        <div class="lb-tag">${tag}</div>
+        <div class="lb-visual">${svg}</div>
+        <h3>${title}</h3>
+        <p>Full-resolution image available on request — see Instagram @vishal_kalakaar for more pieces like this.</p>
+        <button class="lightbox-close" onclick="closeLightbox()">Close</button>
+      `);
+    });
+  });
+
+  // Before/after drag slider
+  document.querySelectorAll('[data-ba]').forEach(compare => {
+    const before = compare.querySelector('.ba-before');
+    const handle = compare.querySelector('.ba-handle');
+    let dragging = false;
+
+    function setPos(clientX) {
+      const rect = compare.getBoundingClientRect();
+      let pct = ((clientX - rect.left) / rect.width) * 100;
+      pct = Math.max(0, Math.min(100, pct));
+      before.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      handle.style.left = pct + '%';
+    }
+
+    compare.addEventListener('mousedown', (e) => { dragging = true; setPos(e.clientX); });
+    window.addEventListener('mousemove', (e) => { if (dragging) setPos(e.clientX); });
+    window.addEventListener('mouseup', () => dragging = false);
+
+    compare.addEventListener('touchstart', (e) => { dragging = true; setPos(e.touches[0].clientX); });
+    compare.addEventListener('touchmove', (e) => { if (dragging) setPos(e.touches[0].clientX); });
+    compare.addEventListener('touchend', () => dragging = false);
+  });
+</script>
+</body>
+</html>
